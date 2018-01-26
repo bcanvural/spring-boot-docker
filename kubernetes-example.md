@@ -67,3 +67,14 @@ $ kubectl describe service mydeployment
 $ curl http://$NODE_IP:$NODE_PORT
 ```
 
+## Scale the pods
+
+```bash
+$ kubectl scale deployments/mydeployment --replicas=4
+```
+
+## Change image of a deployment
+```bash
+$ kubectl set image deployments/mydeployment mydeployment=bcanvural/gs-spring-boot-docker:latest
+```
+
